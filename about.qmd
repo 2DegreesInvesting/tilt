@@ -2,4 +2,5 @@
 title: "About"
 ---
 
-About this site
+* https://github.com/2DegreesInvesting/
+* https://www.tiltsmes.org/

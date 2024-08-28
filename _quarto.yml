@@ -2,13 +2,13 @@ project:
   type: website
 
 website:
-  title: "Tilt"
+  title: "tilt"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
-
+      
 format:
   html:
     theme: cosmo

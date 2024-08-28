@@ -1,7 +1,61 @@
 ---
-title: "Tilt"
+title: "tilt"
 ---
 
-This is a Quarto website.
+This website gives overviews the technical aspects of the tilt ecosystem.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Most links are public but some are restricted to the members of the
+domain 2degrees-investing.org, the members of the GitHub organization
+2DegreesInvesting, or specific people.
+
+## How to find the most relevant repos
+
+This website mentions a number of GitHub repositores (repos) under our
+GitHub organization. I avoid direct links so that this website remains
+accurate if the repos move to a different organization. Search our repos
+at <https://github.com/orgs/2DegreesInvesting/repositories>.
+
+Our GitHub organization has many repos. The most relevant ones use the
+prefix "tilt" (e.g. tiltIndicator) and the topic "tiltsmes".
+
+* [Search public repositories](https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Apublic+&type=repositories).
+* [Search private repositories](https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Aprivate&type=repositories).
+
+## How to understand what each repo is about
+
+The best place to unserstand what each repo is about is it's home page on GitHub.
+
+* At the top you'll find an "About" seciton with useful information and/or links:
+
+![image](https://github.com/user-attachments/assets/cb953907-5a0b-423d-9257-35e5fef298da)
+
+* Scroll past folders and files to read about the goal of the repo and any
+relevant information, typically about the "Installation" and at least one
+"Example".
+
+![image](https://github.com/user-attachments/assets/4aefd12a-50a9-45da-a6c8-bcb9b0af3f5e)
+
+## The app
+
+From all repos, the ones most relevant to the app are these:
+
+* tiltWebTool
+* tiltWebToolData
+* tiltOutput
+
+For more details see the home page of each repo. 
+
+## Software
+
+
+
+## Back end
+
+## Resources
+
+* https://bit.ly/offboarding-mauro
+* ...
+
+----
+
+This is a [Quarto website](https://quarto.org/docs/websites).
