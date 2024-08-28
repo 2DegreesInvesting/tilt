@@ -2,7 +2,7 @@
 title: "tilt"
 ---
 
-This website gives overviews the technical aspects of the tilt ecosystem.
+This website overviews the technical aspects of the tilt ecosystem.
 
 Most links are public but some are restricted to the members of the
 domain 2degrees-investing.org, the members of the GitHub organization
@@ -23,38 +23,41 @@ prefix "tilt" (e.g. tiltIndicator) and the topic "tiltsmes".
 
 ## How to understand what each repo is about
 
-The best place to unserstand what each repo is about is it's home page on GitHub.
+Towards the top, each repo has an "About" seciton with useful information and/or links:
 
-* At the top you'll find an "About" seciton with useful information and/or links:
+<img src=https://github.com/user-attachments/assets/cb953907-5a0b-423d-9257-35e5fef298da width=600>
 
-![image](https://github.com/user-attachments/assets/cb953907-5a0b-423d-9257-35e5fef298da)
+Under the folders and files, each repo has at least a short description of its goal, and commonly 
+and "Installation" and "Example" section:
 
-* Scroll past folders and files to read about the goal of the repo and any
-relevant information, typically about the "Installation" and at least one
-"Example".
+<img src= https://github.com/user-attachments/assets/b7bdbeab-f71f-4e1e-8061-585366c605e5 width=600>
 
-![image](https://github.com/user-attachments/assets/4aefd12a-50a9-45da-a6c8-bcb9b0af3f5e)
+Most repos also have a website (linked in "About") with a function's "Reference" and a "Changelog":
+
+<img src=https://github.com/user-attachments/assets/c5d9fc2d-3d1d-45ff-a5dc-d84913129b76 width=600>
+
+<img src=https://github.com/user-attachments/assets/dde56ba8-dbc5-452b-b4e3-ba2e67eeecea width=600>
 
 ## The app
 
+For information about the "app project" see https://bit.ly/tilt-app-info.
+
 From all repos, the ones most relevant to the app are these:
 
-* tiltWebTool
-* tiltWebToolData
-* tiltOutput
+* tiltWebTool: Public software.
+* tiltWebToolData: Private data used in the app.
+* tiltOutput: Archive of the private data, with multiple versions and
+intermediate outputs.
 
-For more details see the home page of each repo. 
+## How we created the app's data
 
-## Software
-
-
+TODO
 
 ## Back end
 
 ## Resources
 
 * https://bit.ly/offboarding-mauro
-* ...
 
 ----
 
