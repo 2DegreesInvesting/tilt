@@ -117,4 +117,4 @@ file to discover every dependency.
 This is a [Quarto website](https://quarto.org/docs/websites). To
 update it you would tipically need to clone the code, change a file,
 preview the results, render the site, and push your changes to GitHub
-([video](FIXME)).
+([video](https://youtu.be/12H165UTJ5Y)).
