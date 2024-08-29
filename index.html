@@ -112,12 +112,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-find-the-most-relevant-repos" id="toc-how-to-find-the-most-relevant-repos" class="nav-link active" data-scroll-target="#how-to-find-the-most-relevant-repos">How to find the most relevant repos</a></li>
-  <li><a href="#how-to-understand-what-each-repo-is-about" id="toc-how-to-understand-what-each-repo-is-about" class="nav-link" data-scroll-target="#how-to-understand-what-each-repo-is-about">How to understand what each repo is about</a></li>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
+  <li><a href="#navigating-the-code" id="toc-navigating-the-code" class="nav-link" data-scroll-target="#navigating-the-code">Navigating the code</a>
+  <ul class="collapse">
+  <li><a href="#how-to-find-the-most-relevant-repos" id="toc-how-to-find-the-most-relevant-repos" class="nav-link" data-scroll-target="#how-to-find-the-most-relevant-repos">How to find the most relevant repos</a></li>
+  </ul></li>
+  <li><a href="#how-to-understand-what-each-repo-is-about" id="toc-how-to-understand-what-each-repo-is-about" class="nav-link" data-scroll-target="#how-to-understand-what-each-repo-is-about">How to understand what each repo is about</a>
+  <ul class="collapse">
+  <li><a href="#how-to-find-how-one-repo-or-r-package-relates-to-another" id="toc-how-to-find-how-one-repo-or-r-package-relates-to-another" class="nav-link" data-scroll-target="#how-to-find-how-one-repo-or-r-package-relates-to-another">How to find how one repo or R package relates to another</a></li>
+  </ul></li>
+  <li><a href="#highlights" id="toc-highlights" class="nav-link" data-scroll-target="#highlights">Highlights</a>
+  <ul class="collapse">
   <li><a href="#the-app" id="toc-the-app" class="nav-link" data-scroll-target="#the-app">The app</a></li>
-  <li><a href="#how-we-created-the-apps-data" id="toc-how-we-created-the-apps-data" class="nav-link" data-scroll-target="#how-we-created-the-apps-data">How we created the app’s data</a></li>
-  <li><a href="#back-end" id="toc-back-end" class="nav-link" data-scroll-target="#back-end">Back end</a></li>
+  <li><a href="#other-related-repos" id="toc-other-related-repos" class="nav-link" data-scroll-target="#other-related-repos">Other related repos:</a></li>
+  </ul></li>
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#how-to-update-this-website" id="toc-how-to-update-this-website" class="nav-link" data-scroll-target="#how-to-update-this-website">How to update this website</a></li>
   </ul>
 </nav>
     </div>
@@ -143,16 +153,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="welcome" class="level2">
+<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
 <p>This website overviews the technical aspects of the tilt ecosystem.</p>
 <p>Most links are public but some are restricted to the members of the domain 2degrees-investing.org, the members of the GitHub organization 2DegreesInvesting, or specific people.</p>
-<section id="how-to-find-the-most-relevant-repos" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-find-the-most-relevant-repos">How to find the most relevant repos</h2>
+</section>
+<section id="navigating-the-code" class="level2">
+<h2 class="anchored" data-anchor-id="navigating-the-code">Navigating the code</h2>
+<section id="how-to-find-the-most-relevant-repos" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-find-the-most-relevant-repos">How to find the most relevant repos</h3>
 <p>This website mentions a number of GitHub repositores (repos) under our GitHub organization. I avoid direct links so that this website remains accurate if the repos move to a different organization. Search our repos at <a href="https://github.com/orgs/2DegreesInvesting/repositories" class="uri">https://github.com/orgs/2DegreesInvesting/repositories</a>.</p>
 <p>Our GitHub organization has many repos. The most relevant ones use the prefix “tilt” (e.g.&nbsp;tiltIndicator) and the topic “tiltsmes”.</p>
 <ul>
 <li><a href="https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Apublic+&amp;type=repositories">Search public repositories</a>.</li>
 <li><a href="https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Aprivate&amp;type=repositories">Search private repositories</a>.</li>
 </ul>
+</section>
 </section>
 <section id="how-to-understand-what-each-repo-is-about" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-understand-what-each-repo-is-about">How to understand what each repo is about</h2>
@@ -163,31 +179,59 @@ ul.task-list li input[type="checkbox"] {
 <p>Most repos also have a website (linked in “About”) with a function’s “Reference” and a “Changelog”:</p>
 <p><img src="https://github.com/user-attachments/assets/c5d9fc2d-3d1d-45ff-a5dc-d84913129b76" width="600"></p>
 <p><img src="https://github.com/user-attachments/assets/dde56ba8-dbc5-452b-b4e3-ba2e67eeecea" width="600"></p>
+<section id="how-to-find-how-one-repo-or-r-package-relates-to-another" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-find-how-one-repo-or-r-package-relates-to-another">How to find how one repo or R package relates to another</h3>
+<p>The most relevant repositories are structured as an R package. “<a href="https://r-pkgs.org/description.html#the-description-file">Every package must have a DESCRIPTION. In fact, it’s the defining feature of a package</a>”. If a package depends on another package, then that package dependency is listed under the fields <code>Depends</code>, <code>Imports</code>, <code>Suggests</code>, or <code>Remotes</code>.</p>
+<p><code>Remotes</code> lists packages that are not on CRAN, such as all of the packages in the tilt ecosystem. For example, this is the <code>Remotes</code> section of the DESCRIPTION file of tiltIndicatorAfter:</p>
+<pre><code>Remotes: 
+    2DegreesInvesting/tiltIndicator,
+    2degreesinvesting/tiltToyData,
+    2DegreesInvesting/tiltAddCO2,
+    2degreesinvesting/tiltTransitionRisk,
+    2degreesinvesting/tiltPolish</code></pre>
+<p>This means that the package tiltIndicatorAfter depends on five other packages: tiltIndicator, tiltToyData, tiltAddCO2, tiltTransitionRisk, and tiltPolish. And they are all hosted on the GitHub organization 2DegreesInvesting.</p>
+<p>Learn more in the book <a href="https://r-pkgs.org/">R Packages</a>.</p>
 </section>
-<section id="the-app" class="level2">
-<h2 class="anchored" data-anchor-id="the-app">The app</h2>
-<p>For information about the “app project” see https://bit.ly/tilt-app-info.</p>
-<p>From all repos, the ones most relevant to the app are these:</p>
+</section>
+<section id="highlights" class="level2">
+<h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
+<section id="the-app" class="level3">
+<h3 class="anchored" data-anchor-id="the-app">The app</h3>
+<p>The tilt app is our most public-facing technical product. It helps users learn about the tilt project, and explore and request data. It’s built with R shiny, it’s structured as an R package, and is hosted on Google Cloud Run.</p>
+<p>The tilt app depends directly on two repos:</p>
 <ul>
 <li>tiltWebTool: Public software.</li>
 <li>tiltWebToolData: Private data used in the app.</li>
+</ul>
+<p>For information about the tilt app project including links to the app see <a href="https://bit.ly/tilt-app-info" class="uri">https://bit.ly/tilt-app-info</a>. For an overview about building and hosting the app see <a href="https://bit.ly/tilt-offboarding-videos" class="uri">https://bit.ly/tilt-offboarding-videos</a>.</p>
+</section>
+<section id="other-related-repos" class="level3">
+<h3 class="anchored" data-anchor-id="other-related-repos">Other related repos:</h3>
+<p>The app’s data is generated via multiple other repositories. Here is how the most important ones relate to each other, starting from the one closest to the app, and moving towards the deeper layers of the system’s architecture:</p>
+<ul>
 <li>tiltOutput: Archive of the private data, with multiple versions and intermediate outputs.</li>
+<li>tiltIndicatorAfter: Process indicator results so that they are closer to the user-facing outputs. This is an R package and depends on multiple other “tilt” packages. See the <code>Remotes</code> section` of its DESCRIPTION file to discover every dependency.</li>
+<li>tiltIndicator: Implement the core business logic of the tilt indicators.</li>
+<li>tiltToyData: Toy datasets.</li>
+<li>tiltIndicatorBefore: Create input datasets for the tilt ecosystem.</li>
+<li>tiltData: Process company and other data.</li>
+<li>tiltEp: Get company data from the web.</li>
 </ul>
 </section>
-<section id="how-we-created-the-apps-data" class="level2">
-<h2 class="anchored" data-anchor-id="how-we-created-the-apps-data">How we created the app’s data</h2>
-<p>TODO</p>
-</section>
-<section id="back-end" class="level2">
-<h2 class="anchored" data-anchor-id="back-end">Back end</h2>
 </section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <ul>
-<li>https://bit.ly/offboarding-mauro</li>
+<li><a href="https://bit.ly/tilt-app-videos" class="uri">https://bit.ly/tilt-app-videos</a></li>
+<li><a href="https://bit.ly/tilt-wrap-up" class="uri">https://bit.ly/tilt-wrap-up</a></li>
+<li><a href="https://r-pkgs.org/">R Packages</a></li>
+<li><a href="https://mastering-shiny.org/">Mastering Shiny</a></li>
+<li><a href="https://cloud.google.com/">Google Cloud</a></li>
 </ul>
-<hr>
-<p>This is a <a href="https://quarto.org/docs/websites">Quarto website</a>.</p>
+</section>
+<section id="how-to-update-this-website" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-update-this-website">How to update this website</h2>
+<p>This is a <a href="https://quarto.org/docs/websites">Quarto website</a>. To update it you would tipically need to clone the code, change a file, preview the results, render the site, and push your changes to GitHub.</p>
 
 
 </section>
@@ -274,7 +318,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/2DegreesInvesting\.github\.io\/tilt\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
