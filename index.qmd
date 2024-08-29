@@ -118,4 +118,4 @@ section of its DESCRIPTION file.
 This is a [Quarto website](https://quarto.org/docs/websites). To update
 it, clone it's repo from GitHub, do your changes, preview the results,
 render the site, push your changes to GitHub, and publish the updated
-site to GitHub Pages ([video](TODO)).
+site to GitHub Pages ([video](https://youtu.be/blqtEcJdD2c)).
