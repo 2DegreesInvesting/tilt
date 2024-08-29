@@ -10,10 +10,9 @@ domain 2degrees-investing.org, the members of the GitHub organization
 
 ### How to find the most relevant repos
 
-This website mentions a number of GitHub repositores (repos) under our
-GitHub organization. I avoid direct links so that this website remains
-accurate if the repos move to a different organization. Search our repos
-at <https://github.com/orgs/2DegreesInvesting/repositories>.
+This website mentions a number of GitHub repositories
+(repos) under our GitHub organization. Search our repos at
+<https://github.com/orgs/2DegreesInvesting/repositories>.
 
 Our GitHub organization has many repos. The most relevant ones use the
 prefix "tilt" (e.g. tiltIndicator) and the topic "tiltsmes".
@@ -23,26 +22,29 @@ prefix "tilt" (e.g. tiltIndicator) and the topic "tiltsmes".
 
 ## How to understand what each repo is about
 
-Towards the top, each repo has an "About" seciton with useful information and/or links:
+Towards the top, each repo has an "About" seciton with useful information
+or links.
 
 <img src=https://github.com/user-attachments/assets/cb953907-5a0b-423d-9257-35e5fef298da width=600>
 
-Under the folders and files, each repo has at least a short description of its goal, and commonly 
-and "Installation" and "Example" section:
+Scrolling down past the folders and files, each repo has at least a short
+description of its goal, and commonly also the sections "Installation"
+and "Example".
 
 <img src= https://github.com/user-attachments/assets/b7bdbeab-f71f-4e1e-8061-585366c605e5 width=600>
 
-Most repos also have a website (linked in "About") with a function's "Reference" and a "Changelog":
+Most repos also have a website (linked in "About") with a function's "Reference" and a "Changelog".
 
 <img src=https://github.com/user-attachments/assets/c5d9fc2d-3d1d-45ff-a5dc-d84913129b76 width=600>
 
 <img src=https://github.com/user-attachments/assets/dde56ba8-dbc5-452b-b4e3-ba2e67eeecea width=600>
 
-### How to find how one repo or R package relates to another
+### How do repos or packages relate to each other
 
-The most relevant repositories are structured as an R package. "[Every
-package must have a DESCRIPTION. In fact, it's the defining feature of a
-package](https://r-pkgs.org/description.html#the-description-file)". If
+With few exceptions, each repository is structured
+as an R package. [*Every package must have a
+DESCRIPTION. In fact, it's the defining feature of a
+package](https://r-pkgs.org/description.html#the-description-file)*. If
 a package depends on another package, then that package dependency is
 listed under the fields `Depends`, `Imports`, `Suggests`, or `Remotes`.
 
@@ -74,8 +76,7 @@ Learn more in the book [R Packages](https://r-pkgs.org/).
 
 The tilt app is our most public-facing technical product. It helps users
 learn about the tilt project, and explore and request data. It's built
-with R shiny, it's structured as an R package, and is hosted on Google
-Cloud Run.
+with R shiny, structured as an R package, and hosted on Google Cloud Run.
 
 The tilt app depends directly on two repos:
 
@@ -86,22 +87,22 @@ For information about the tilt app project including links to the app
 see <https://bit.ly/tilt-app-info>. For an overview about building and
 hosting the app see <https://bit.ly/tilt-offboarding-videos>.
 
-### Other related repos:
+### Other related repos
 
 The app's data is generated via multiple other repositories. Here is how the
 most important ones relate to each other, starting from the one closest to
-the app, and moving towards the deeper layers of the system's architecture:
+the app, and moving towards the deeper layers of the tilt system architecture:
 
 * tiltOutput: Archive of the private data, with multiple versions and
 intermediate outputs.
 * tiltIndicatorAfter: Process indicator results so that they are closer
 to the user-facing outputs. This is an R package and depends on multiple
-other "tilt" packages. See the `Remotes` section` of its DESCRIPTION
-file to discover every dependency.
+other "tilt" packages. To discover each dependency see the `Remotes`
+section of its DESCRIPTION file.
 * tiltIndicator: Implement the core business logic of the tilt indicators.
 * tiltToyData: Toy datasets.
 * tiltIndicatorBefore: Create input datasets for the tilt ecosystem.
-* tiltData: Process company and other data.
+* tiltData: Process company data and other data.
 * tiltEp: Get company data from the web.
 
 ## Resources
@@ -114,7 +115,7 @@ file to discover every dependency.
 
 ## How to update this website
 
-This is a [Quarto website](https://quarto.org/docs/websites). To
-update it you would tipically need to clone the code, change a file,
-preview the results, render the site, and push your changes to GitHub
-([video](https://youtu.be/12H165UTJ5Y)).
+This is a [Quarto website](https://quarto.org/docs/websites). To update
+it, clone it's repo from GitHub, do your changes, preview the results,
+render the site, push your changes to GitHub, and publish the updated
+site to GitHub Pages ([video](FIXME)).
