@@ -35,11 +35,11 @@
     "text": "The app\nFor information about the “app project” see https://bit.ly/tilt-app-info.\nFrom all repos, the ones most relevant to the app are these:\n\ntiltWebTool: Public software.\ntiltWebToolData: Private data used in the app.\ntiltOutput: Archive of the private data, with multiple versions and intermediate outputs."
   },
   {
-    "objectID": "index.html#software",
-    "href": "index.html#software",
+    "objectID": "index.html#how-we-created-the-apps-data",
+    "href": "index.html#how-we-created-the-apps-data",
     "title": "tilt",
-    "section": "Software",
-    "text": "Software"
+    "section": "How we created the app’s data",
+    "text": "How we created the app’s data\nTODO"
   },
   {
     "objectID": "index.html#back-end",
@@ -54,12 +54,5 @@
     "title": "tilt",
     "section": "Resources",
     "text": "Resources\n\nhttps://bit.ly/offboarding-mauro\n\n\nThis is a Quarto website."
-  },
-  {
-    "objectID": "index.html#how-we-created-the-apps-data",
-    "href": "index.html#how-we-created-the-apps-data",
-    "title": "tilt",
-    "section": "How we created the app’s data",
-    "text": "How we created the app’s data\nTODO"
   }
 ]
