@@ -2,16 +2,18 @@ project:
   type: website
 
 website:
-  title: "tilt"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
-      
+        text: Home 
+    right:
+      - about.qmd  
+      - icon: github
+        href: https://github.com/2DegreesInvesting/
+
 format:
   html:
-    theme: cosmo
+    theme: minty
     css: styles.css
     toc: true
 

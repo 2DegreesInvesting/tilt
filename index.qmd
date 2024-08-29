@@ -1,14 +1,14 @@
----
-title: "tilt"
----
+# tilt <a><img src="https://images.squarespace-cdn.com/content/v1/621e47bd3238a230485a7298/621e84e1-bb88-490f-b091-958078c72279/1tilt+dark+green.png" align="right" width="30%"></a>
 
-This website overviews the technical aspects of the tilt ecosystem.
+This is an overview of tilt's software and data.
 
 Most links are public but some are restricted to the members of the
 domain 2degrees-investing.org, the members of the GitHub organization
 2DegreesInvesting, or specific people.
 
-## How to find the most relevant repos
+## Navigating the code
+
+### How to find the most relevant repos
 
 This website mentions a number of GitHub repositores (repos) under our
 GitHub organization. I avoid direct links so that this website remains
@@ -38,27 +38,83 @@ Most repos also have a website (linked in "About") with a function's "Reference"
 
 <img src=https://github.com/user-attachments/assets/dde56ba8-dbc5-452b-b4e3-ba2e67eeecea width=600>
 
-## The app
+### How to find how one repo or R package relates to another
 
-For information about the "app project" see https://bit.ly/tilt-app-info.
+The most relevant repositories are structured as an R package. "[Every
+package must have a DESCRIPTION. In fact, it's the defining feature of a
+package](https://r-pkgs.org/description.html#the-description-file)". If
+a package depends on another package, then that package dependency is
+listed under the fields `Depends`, `Imports`, `Suggests`, or `Remotes`.
 
-From all repos, the ones most relevant to the app are these:
+`Remotes` lists packages that are not on CRAN, such as all of the
+packages in the tilt ecosystem. For example, this is the `Remotes`
+section of the DESCRIPTION file of tiltIndicatorAfter:
+
+```
+Remotes: 
+    2DegreesInvesting/tiltIndicator,
+    2degreesinvesting/tiltToyData,
+    2DegreesInvesting/tiltAddCO2,
+    2degreesinvesting/tiltTransitionRisk,
+    2degreesinvesting/tiltPolish
+```
+
+This means that the package tiltIndicatorAfter depends on five other
+packages: tiltIndicator, tiltToyData, tiltAddCO2, tiltTransitionRisk,
+and tiltPolish. And they are all hosted on the GitHub organization
+2DegreesInvesting.
+
+Learn more in the book [R Packages](https://r-pkgs.org/).
+
+
+
+## Highlights
+
+### The app
+
+The tilt app is our most public-facing technical product. It helps users
+learn about the tilt project, and explore and request data. It's built
+with R shiny, it's structured as an R package, and is hosted on Google
+Cloud Run.
+
+The tilt app depends directly on two repos:
 
 * tiltWebTool: Public software.
 * tiltWebToolData: Private data used in the app.
+
+For information about the tilt app project including links to the app
+see <https://bit.ly/tilt-app-info>. For an overview about building and
+hosting the app see <https://bit.ly/tilt-offboarding-videos>.
+
+### Other related repos:
+
+The app's data is generated via multiple other repositories. Here is how the
+most important ones relate to each other, starting from the one closest to
+the app, and moving towards the deeper layers of the system's architecture:
+
 * tiltOutput: Archive of the private data, with multiple versions and
 intermediate outputs.
-
-## How we created the app's data
-
-TODO
-
-## Back end
+* tiltIndicatorAfter: Process indicator results so that they are closer
+to the user-facing outputs. This is an R package and depends on multiple
+other "tilt" packages. See the `Remotes` section` of its DESCRIPTION
+file to discover every dependency.
+* tiltIndicator: Implement the core business logic of the tilt indicators.
+* tiltToyData: Toy datasets.
+* tiltIndicatorBefore: Create input datasets for the tilt ecosystem.
+* tiltData: Process company and other data.
+* tiltEp: Get company data from the web.
 
 ## Resources
 
-* https://bit.ly/offboarding-mauro
+* <https://bit.ly/tilt-app-videos>
+* <https://bit.ly/tilt-wrap-up>
+* [R Packages](https://r-pkgs.org/)
+* [Mastering Shiny](https://mastering-shiny.org/)
+* [Google Cloud](https://cloud.google.com/)
 
-----
+## How to update this website
 
-This is a [Quarto website](https://quarto.org/docs/websites).
+This is a [Quarto website](https://quarto.org/docs/websites). To update
+it you would tipically need to clone the code, change a file, preview
+the results, render the site, and push your changes to GitHub.
+
