@@ -114,7 +114,7 @@ file to discover every dependency.
 
 ## How to update this website
 
-This is a [Quarto website](https://quarto.org/docs/websites). To update
-it you would tipically need to clone the code, change a file, preview
-the results, render the site, and push your changes to GitHub.
-
+This is a [Quarto website](https://quarto.org/docs/websites). To
+update it you would tipically need to clone the code, change a file,
+preview the results, render the site, and push your changes to GitHub
+([video](FIXME)).
