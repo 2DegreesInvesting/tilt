@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "https://github.com/2DegreesInvesting/\nhttps://www.tiltsmes.org/"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "tilt",
+    "section": "",
+    "text": "This website overviews the technical aspects of the tilt ecosystem.\nMost links are public but some are restricted to the members of the domain 2degrees-investing.org, the members of the GitHub organization 2DegreesInvesting, or specific people."
+  },
+  {
+    "objectID": "index.html#how-to-find-the-most-relevant-repos",
+    "href": "index.html#how-to-find-the-most-relevant-repos",
+    "title": "tilt",
+    "section": "How to find the most relevant repos",
+    "text": "How to find the most relevant repos\nThis website mentions a number of GitHub repositores (repos) under our GitHub organization. I avoid direct links so that this website remains accurate if the repos move to a different organization. Search our repos at https://github.com/orgs/2DegreesInvesting/repositories.\nOur GitHub organization has many repos. The most relevant ones use the prefix “tilt” (e.g. tiltIndicator) and the topic “tiltsmes”.\n\nSearch public repositories.\nSearch private repositories."
+  },
+  {
+    "objectID": "index.html#how-to-understand-what-each-repo-is-about",
+    "href": "index.html#how-to-understand-what-each-repo-is-about",
+    "title": "tilt",
+    "section": "How to understand what each repo is about",
+    "text": "How to understand what each repo is about\nTowards the top, each repo has an “About” seciton with useful information and/or links:\n\nUnder the folders and files, each repo has at least a short description of its goal, and commonly and “Installation” and “Example” section:\n\nMost repos also have a website (linked in “About”) with a function’s “Reference” and a “Changelog”:"
+  },
+  {
+    "objectID": "index.html#the-app",
+    "href": "index.html#the-app",
+    "title": "tilt",
+    "section": "The app",
+    "text": "The app\nFor information about the “app project” see https://bit.ly/tilt-app-info.\nFrom all repos, the ones most relevant to the app are these:\n\ntiltWebTool: Public software.\ntiltWebToolData: Private data used in the app.\ntiltOutput: Archive of the private data, with multiple versions and intermediate outputs."
+  },
+  {
+    "objectID": "index.html#how-we-created-the-apps-data",
+    "href": "index.html#how-we-created-the-apps-data",
+    "title": "tilt",
+    "section": "How we created the app’s data",
+    "text": "How we created the app’s data\nTODO"
+  },
+  {
+    "objectID": "index.html#back-end",
+    "href": "index.html#back-end",
+    "title": "tilt",
+    "section": "Back end",
+    "text": "Back end"
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "tilt",
+    "section": "Resources",
+    "text": "Resources\n\nhttps://bit.ly/offboarding-mauro\n\n\nThis is a Quarto website."
+  }
+]
