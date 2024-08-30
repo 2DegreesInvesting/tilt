@@ -2,7 +2,6 @@
 title: "About"
 ---
 
-Learn more about our work:
-
-* Website: <https://www.tiltsmes.org/>
-* GitHub: <https://github.com/2DegreesInvesting/>
+This website was created by [Mauro
+Lepore](https://www.linkedin.com/in/mauro-lepore/) on behalf of the
+[tilt team](https://www.tiltsmes.org/whoweare).

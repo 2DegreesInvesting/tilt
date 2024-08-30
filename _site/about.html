@@ -134,11 +134,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Learn more about our work:</p>
-<ul>
-<li>Website: <a href="https://www.tiltsmes.org/" class="uri">https://www.tiltsmes.org/</a></li>
-<li>GitHub: <a href="https://github.com/2DegreesInvesting/" class="uri">https://github.com/2DegreesInvesting/</a></li>
-</ul>
+<p>This website was created by <a href="https://www.linkedin.com/in/mauro-lepore/">Mauro Lepore</a> on behalf of the <a href="https://www.tiltsmes.org/whoweare">tilt team</a>.</p>
 
 
 
@@ -224,7 +220,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/2DegreesInvesting\.github\.io\/tilt\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
