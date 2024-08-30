@@ -152,8 +152,8 @@ ul.task-list li input[type="checkbox"] {
 <p>This website mentions a number of GitHub repositories (repos) under our GitHub organization. Search our repos at <a href="https://github.com/orgs/2DegreesInvesting/repositories" class="uri">https://github.com/orgs/2DegreesInvesting/repositories</a>.</p>
 <p>Our GitHub organization has many repos. The most relevant ones use the prefix “tilt” (e.g.&nbsp;tiltIndicator) and the topic “tiltsmes”.</p>
 <ul>
-<li><a href="https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Apublic+&amp;type=repositories">Search public repositories</a>.</li>
-<li><a href="https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Aprivate&amp;type=repositories">Search private repositories</a>.</li>
+<li><a href="https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Apublic+&amp;type=repositories">Search public repo</a>.</li>
+<li><a href="https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Aprivate&amp;type=repositories">Search private repos</a>.</li>
 </ul>
 </section>
 </section>
@@ -163,12 +163,12 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="https://github.com/user-attachments/assets/cb953907-5a0b-423d-9257-35e5fef298da" width="600"></p>
 <p>Scrolling down past the folders and files, each repo has at least a short description of its goal, and commonly also the sections “Installation” and “Example”.</p>
 <p><img src="https://github.com/user-attachments/assets/b7bdbeab-f71f-4e1e-8061-585366c605e5" width="600"></p>
-<p>Most repos also have a website (linked in “About”) with a function’s “Reference” and a “Changelog”.</p>
+<p>Most repos also have a website (linked in “About”) with a “Reference” and a “Changelog”.</p>
 <p><img src="https://github.com/user-attachments/assets/c5d9fc2d-3d1d-45ff-a5dc-d84913129b76" width="600"></p>
 <p><img src="https://github.com/user-attachments/assets/dde56ba8-dbc5-452b-b4e3-ba2e67eeecea" width="600"></p>
 <section id="how-do-repos-or-packages-relate-to-each-other" class="level3">
 <h3 class="anchored" data-anchor-id="how-do-repos-or-packages-relate-to-each-other">How do repos or packages relate to each other</h3>
-<p>With few exceptions, each repository is structured as an R package. <a href="https://r-pkgs.org/description.html#the-description-file">*Every package must have a DESCRIPTION. In fact, it’s the defining feature of a package</a>*. If a package depends on another package, then that package dependency is listed under the fields <code>Depends</code>, <code>Imports</code>, <code>Suggests</code>, or <code>Remotes</code>.</p>
+<p>With few exceptions, each repo is structured as an R package. <em><a href="https://r-pkgs.org/description.html#the-description-file">Every package must have a DESCRIPTION. In fact, it’s the defining feature of a package</a></em>. If a package depends on another package, then that package dependency is listed under the fields <code>Depends</code>, <code>Imports</code>, <code>Suggests</code>, or <code>Remotes</code>.</p>
 <p><code>Remotes</code> lists packages that are not on CRAN, such as all of the packages in the tilt ecosystem. For example, this is the <code>Remotes</code> section of the DESCRIPTION file of tiltIndicatorAfter:</p>
 <pre><code>Remotes: 
     2DegreesInvesting/tiltIndicator,
@@ -190,14 +190,14 @@ ul.task-list li input[type="checkbox"] {
 <li>tiltWebTool: Public software.</li>
 <li>tiltWebToolData: Private data used in the app.</li>
 </ul>
-<p>For information about the tilt app project including links to the app see <a href="https://bit.ly/tilt-app-info" class="uri">https://bit.ly/tilt-app-info</a>. For an overview about building and hosting the app see <a href="https://bit.ly/tilt-offboarding-videos" class="uri">https://bit.ly/tilt-offboarding-videos</a>.</p>
+<p>For information about the tilt app project including links to the app see <a href="https://bit.ly/tilt-app-info" class="uri">https://bit.ly/tilt-app-info</a>. For an overview about building and hosting the app see <a href="https://bit.ly/tilt-app-videos" class="uri">https://bit.ly/tilt-app-videos</a>.</p>
 </section>
 <section id="other-related-repos" class="level3">
 <h3 class="anchored" data-anchor-id="other-related-repos">Other related repos</h3>
-<p>The app’s data is generated via multiple other repositories. Here is how the most important ones relate to each other, starting from the one closest to the app, and moving towards the deeper layers of the tilt system architecture:</p>
+<p>The app’s data is generated via multiple other repos. Here is how the most important ones relate to each other, starting from the one closest to the app, and moving towards the deeper layers of the tilt-system architecture:</p>
 <ul>
 <li>tiltOutput: Archive of the private data, with multiple versions and intermediate outputs.</li>
-<li>tiltIndicatorAfter: Process indicator results so that they are closer to the user-facing outputs. This is an R package and depends on multiple other “tilt” packages. To discover each dependency see the <code>Remotes</code> section of its DESCRIPTION file.</li>
+<li>tiltIndicatorAfter: Process indicator results so that they are closer to the user-facing outputs. It depends on multiple other “tilt” packages. To discover each dependency see the <code>Remotes</code> section of its DESCRIPTION file.</li>
 <li>tiltIndicator: Implement the core business logic of the tilt indicators.</li>
 <li>tiltToyData: Toy datasets.</li>
 <li>tiltIndicatorBefore: Create input datasets for the tilt ecosystem.</li>

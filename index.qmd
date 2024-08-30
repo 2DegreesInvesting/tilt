@@ -17,8 +17,8 @@ This website mentions a number of GitHub repositories
 Our GitHub organization has many repos. The most relevant ones use the
 prefix "tilt" (e.g. tiltIndicator) and the topic "tiltsmes".
 
-* [Search public repositories](https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Apublic+&type=repositories).
-* [Search private repositories](https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Aprivate&type=repositories).
+* [Search public repo](https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Apublic+&type=repositories).
+* [Search private repos](https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Aprivate&type=repositories).
 
 ## How to understand what each repo is about
 
@@ -33,7 +33,8 @@ and "Example".
 
 <img src= https://github.com/user-attachments/assets/b7bdbeab-f71f-4e1e-8061-585366c605e5 width=600>
 
-Most repos also have a website (linked in "About") with a function's "Reference" and a "Changelog".
+Most repos also have a website (linked in "About") with a "Reference"
+and a "Changelog".
 
 <img src=https://github.com/user-attachments/assets/c5d9fc2d-3d1d-45ff-a5dc-d84913129b76 width=600>
 
@@ -41,9 +42,8 @@ Most repos also have a website (linked in "About") with a function's "Reference"
 
 ### How do repos or packages relate to each other
 
-With few exceptions, each repository is structured
-as an R package. [*Every package must have a
-DESCRIPTION. In fact, it's the defining feature of a
+With few exceptions, each repo is structured as an R package. *[Every
+package must have a DESCRIPTION. In fact, it's the defining feature of a
 package](https://r-pkgs.org/description.html#the-description-file)*. If
 a package depends on another package, then that package dependency is
 listed under the fields `Depends`, `Imports`, `Suggests`, or `Remotes`.
@@ -85,20 +85,20 @@ The tilt app depends directly on two repos:
 
 For information about the tilt app project including links to the app
 see <https://bit.ly/tilt-app-info>. For an overview about building and
-hosting the app see <https://bit.ly/tilt-offboarding-videos>.
+hosting the app see <https://bit.ly/tilt-app-videos>.
 
 ### Other related repos
 
-The app's data is generated via multiple other repositories. Here is how the
-most important ones relate to each other, starting from the one closest to
-the app, and moving towards the deeper layers of the tilt system architecture:
+The app's data is generated via multiple other repos. Here is how the most
+important ones relate to each other, starting from the one closest to the
+app, and moving towards the deeper layers of the tilt-system architecture:
 
 * tiltOutput: Archive of the private data, with multiple versions and
 intermediate outputs.
-* tiltIndicatorAfter: Process indicator results so that they are closer
-to the user-facing outputs. This is an R package and depends on multiple
-other "tilt" packages. To discover each dependency see the `Remotes`
-section of its DESCRIPTION file.
+* tiltIndicatorAfter: Process indicator results so that they are
+closer to the user-facing outputs. It depends on multiple other "tilt"
+packages. To discover each dependency see the `Remotes` section of its
+DESCRIPTION file.
 * tiltIndicator: Implement the core business logic of the tilt indicators.
 * tiltToyData: Toy datasets.
 * tiltIndicatorBefore: Create input datasets for the tilt ecosystem.
