@@ -17,7 +17,7 @@ This website mentions a number of GitHub repositories
 Our GitHub organization has many repos. The most relevant ones use the
 prefix "tilt" (e.g. tiltIndicator) and the topic "tiltsmes".
 
-* [Search public repo](https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Apublic+&type=repositories).
+* [Search public repos](https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Apublic+&type=repositories).
 * [Search private repos](https://github.com/search?q=org%3A2DegreesInvesting+topic%3Atiltsmes+is%3Aprivate&type=repositories).
 
 ## How to understand what each repo is about
